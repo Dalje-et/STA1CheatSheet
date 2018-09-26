@@ -1,0 +1,119 @@
+\documentclass[a4paper, 10pt]{article}
+
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
+%% Sets page size and margins
+\usepackage[a4paper,top=1cm,bottom=2cm,left=1cm,right=1cm]{geometry}
+
+%% Multicolumn layout
+\usepackage{multicol}
+\setlength{\columnsep}{1cm}
+
+%% Useful packages
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage{xfrac}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[colorlinks=true, allcolors=blue]{hyperref}
+
+
+\title{Key Formulas for STA1}
+\author{Daljeet Sandu}
+
+\pagenumbering{gobble}
+\begin{document}
+\fontdimen2\font=2pt %removes unnecessary spacing between words
+\begin{center}
+\Large{\textbf{Key Formulas for STA1 Q1 \& Q2}}
+\end{center}
+\begin{multicols}{2}
+%CHAPTER 2
+\noindent
+\textbf{Chapter 2 - Organizing and Graphing Data}
+\begin{itemize}
+	\item Relative frequency of a class = $f/\Sigma f$
+	\item Percentage of a class = $\textrm{(Relative frequency)} \times 100$
+	\item Class midpoint or mark = (Upper limit+Lower limit)/2
+    \item Class width = Upper boundary - Lower boundary
+    \item Cumulative relative frequency \\
+    	\[ = \frac{\textrm{Cumulative frequency}}{\textrm{Total observations in the data set}} \]
+	\item Cumulative percentage
+    	\[ = \textrm{(Cumulative relative frequency)} \times 100 \]
+\end{itemize}
+%CHAPTER 3
+\textbf{Chapter 3 - Numerical Descriptive Measures}
+\begin{itemize}
+	\item Mean for ungrouped data: $\mu = \Sigma x /N$ and $\bar{x} = \Sigma x/n$
+	\item Mean for grouped data: $\mu = \Sigma mf /N$ and $\bar{x} = \Sigma mf/n$, where \textit{m} is the midpoint and $f$ is the frequency of a class
+    \item Median for ungrouped data \\
+    \hfill= Value of the middle term in a ranked data set
+    \item Range = Largest value - Smallest value
+    \item Variance for ungrouped data: \\ \fontdimen2\font=9pt
+    \[ \sigma^2 = \frac{\Sigma x^2 - \frac{(\Sigma x)^2}{N}}{N} \textrm{ and } s^2 = \frac{\Sigma x^2 - \frac{(\Sigma x)^2}{n}}{n-1} \]
+    \fontdimen2\font=2pt where $\sigma^2$ is the population variance and $s^2$ is the sample variance
+    \item Standard deviation for ungrouped data: \\ \fontdimen2\font=9pt
+    \[ \sigma = \sqrt{\frac{\Sigma x^2 - \frac{(\Sigma x)^2}{N}}{N}} \textrm{ and } s = \sqrt{\frac{\Sigma x^2 - \frac{(\Sigma x)^2}{n}}{n-1}} \] \fontdimen2\font=2pt where $\sigma$ and \textit{s} are the population sample standard deviations, respectively
+    \item Variance for grouped data: \\ \fontdimen2\font=9pt
+    \[ \sigma^2 = \frac{\Sigma m^2f - \frac{(\Sigma mf)^2}{N}}{N} \textrm{ and } s^2 = \frac{\Sigma m^2f - \frac{(\Sigma mf)^2}{n}}{n-1} \] \fontdimen2\font=2pt
+    \item Standard deviation for grouped data: \\ \fontdimen2\font=4pt
+    \[ \sigma = \sqrt{\frac{\Sigma m^2f - \frac{(\Sigma mf)^2}{N}}{N}} \textrm{ and } s = \sqrt{\frac{\Sigma m^2f - \frac{(\Sigma mf)^2}{n}}{n-1}} \] \fontdimen2\font=2pt
+\end{itemize}
+%\columnbreak %start right column
+%CHAPTER 4
+\textbf{Chapter 4 - Probability}
+\begin{itemize} 
+	\setlength\itemsep{1em}
+    \item Classical probability rule for a simple event:
+    	\[ P(E_i) = \frac{1}{\textrm{Total number of outcomes}} \]
+	\item Classical probability rule for a compound event: 
+    	\[ P(A) = \frac{\textrm{Number of outcomes in A}}{\textrm{Total number of outcomes}} \]
+    \item Relative frequency as an approximation of probability: 
+    	\[ P(A) = \frac{f}{n} \]
+    \item Conditional probability of an event: \fontdimen2\font=4pt
+    	\[ P(A|B) = \frac{P(A \textrm{ and } B)}{P(B)} \textrm{ and } P(B|A) = \frac{P(A \textrm{ and } B)}{P(A)} \] \fontdimen2\font=2pt
+    \item Condition for independence of events: \fontdimen2\font=8pt
+    	\[ P(A) = P(A|B) \textrm{ and/or } P(B) = P(B|A) \] \fontdimen2\font=2pt
+    \item For complementary events: $ P(A) + P(\bar{A}) = 1 $
+    \item Multiplication rule for dependent events: 
+    	\[ P(A \textrm{ and } B) = P(A) P(B|A) \]
+    \item Multiplication rule for independent events:
+    	\[ P(A \textrm{ and } B) = P(A) P(B) \]
+    \item Joint probability of two mutually exclusive events: 
+    	\[ P(A \textrm{ and } B) = 0 \]
+    \item Addition rule for mutually nonexclusive events:
+    	\[ P(A \textrm{ or } B) = P(A) + P(B) - P(A \textrm{ and } B) \]
+    \item Addition rule for mutually exclusive events:
+    	\[ P(A \textrm{ or } B) = P(A) + P(B) \]
+\end{itemize}
+%CHAPTER 5
+\textbf{Chapter 5 - Discrete Random Variables and Their Probability Distribution}
+\begin{itemize}
+	\item Mean of a discrete random variable $x$: $\mu = \sum xP(x)$ 
+    \item Standard deviation of a discrete random variable $x$: \\
+    	\[ \sigma = \sqrt{(\sum{x^2P(x)}) - \mu^2} \]
+\end{itemize}
+%CHAPTER 6
+\textbf{Chapter 6 - Continuous Random Variables and the Normal Distribution}
+\begin{itemize}
+	\item $z$ value for an $x$ value:  \scalebox{1.4}{$z = \frac{x - \mu}{\sigma}$}
+    \item Value of x when $\mu, \sigma, \textrm{ and } z$ are known: $x = \mu + z\sigma$
+\end{itemize}
+%CHAPTER 13
+\textbf{Chapter 13 - Simple Linear Regression}
+\begin{itemize}
+	\item Simple linear regression model: $y = A + Bx + \in$
+    \item Estimated simple linear regression model: $\hat{y} = a + bx$
+\end{itemize}
+%CHAPTER 14
+\textbf{Chapter 14 - Multiple Regression}
+\begin{itemize}
+	\item Multiple regression model: \\ 
+    	$y = A + B_1 x_1 + B_2 x_2 + B_3 x_3 + \dots + B_k x_k + \in$
+    \item Estimated multiple regression model: \\ 
+    	$\hat{y} = a + b_1 x_1 + b_2 x_2 + b_3 x_3 + \dots + b_k x_k$
+\end{itemize}
+\end{multicols}
+\end{document}
